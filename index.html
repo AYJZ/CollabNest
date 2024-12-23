@@ -3,12 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Club Platform</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple webpage.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#clubs">Clubs</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#partners">School Partners</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to the Club Platform</h1>
+        <p>Discover clubs, showcase achievements, and connect with schools.</p>
+    </section>
+
+    <section id="clubs">
+        <h2>Clubs</h2>
+        <div>
+            <label for="search">Search by interests or location:</label>
+            <input type="text" id="search" placeholder="e.g., Robotics, Drama, New York">
+            <button onclick="searchClubs()">Search</button>
+        </div>
+        <div id="categories">
+            <button onclick="filterCategory('STEM')">STEM</button>
+            <button onclick="filterCategory('Arts')">Arts</button>
+            <button onclick="filterCategory('Social')">Social</button>
+        </div>
+        <div id="club-list">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </section>
+
+    <section id="showcase">
+        <h2>Showcase</h2>
+        <div id="featured-projects">
+            <!-- Dynamic content for featured projects -->
+        </div>
+    </section>
+
+    <section id="join">
+        <h2>Join Us</h2>
+        <div>
+            <h3>For Students</h3>
+            <p>Follow these steps to apply to clubs:</p>
+            <ol>
+                <li>Search for clubs in your area of interest.</li>
+                <li>Apply using the "Join" button on the club page.</li>
+                <li>Wait for approval and further instructions.</li>
+            </ol>
+        </div>
+        <div>
+            <h3>For Clubs</h3>
+            <p>To create a profile and post updates, follow these steps:</p>
+            <ol>
+                <li>Register your club by clicking "Sign Up".</li>
+                <li>Complete your club profile.</li>
+                <li>Post updates to showcase achievements.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="partners">
+        <h2>School Partners</h2>
+        <p>Discover how your school can benefit from partnering with us.</p>
+        <ul>
+            <li>Expand opportunities for students.</li>
+            <li>Promote club activities and events.</li>
+            <li>Foster collaboration and networking.</li>
+        </ul>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div id="articles">
+            <!-- Blog posts will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our mission is to connect students, clubs, and schools through an innovative platform.</p>
+        <p>Meet our team of passionate individuals dedicated to fostering collaboration and growth.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Club Platform. All Rights Reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
